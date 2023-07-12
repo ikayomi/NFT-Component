@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+
+}
+.container{
+    background-color:  hsl(216, 50%, 16%);   
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 265px;
+}
+.nft{
+    position: relative;
+}
+.view{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%,35%);
+    top: 25%;
+    height: 217px;
+    width: 217px;
+    max-width: 765px;
+    opacity: 0;
+    transition: opacity .2s linear;
+    border-radius: 15px;
+    
+}
+ .view img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.view:hover{
+    opacity:1;
+    cursor: pointer;
+    border-radius:15px ;
+    
+}
+
+.blaar{
+    height: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 9px;
+}
+h1{
+    font-size: 20px ;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+p{
+    margin: 10px 0 5px 0;
+    font:18px;
+    color:hsl(215, 51%, 70%) ;
+}
+.currency-days{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.currency{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: hsl(178, 100%, 50%);
+}
+.currency img{
+    margin: 5px;
+}
+.days{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color:hsl(215, 51%, 70%);
+}
+.days img{
+    margin: 5px;
+}
+.creator{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+
+}
+.creator img{
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+h4{
+    color:  hsl(215, 51%, 70%);
+    font-size: 14px;
+    font-family: 'Outfit' sans-serif;
+    
+}
+span{
+    color:  hsl(0, 0%, 100%) ;
+}
+h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+h4 span:hover{
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+}
+@media only screen and (max-width: px) {
+    .view{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 24%;
+    height: 29%;
+    width: 19.5%;
+    opacity: 0; 
+    }
+}
